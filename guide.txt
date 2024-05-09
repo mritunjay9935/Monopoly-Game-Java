@@ -10,11 +10,19 @@ Game Application Usage Guide
 2. Features:
    - Game Management: The application allows you to create, manage, and play games. The main entry point of the application is `GameApplication.java`.
    - Entity Management: The application uses `BaseEntity.java` as a base class for all entities in the application. It includes fields like `id`, `createdAt`, `lockId`, and `modifiedAt`.
-   - Exception Handling: The application has custom exception classes like `NoHostException.java`, `UserNotFoundException.java`, `InvalidMoveException.java`, and `NoActiveGameException.java` to handle various scenarios during the game play.
-   - Exception Handlers: The application uses `ApplicationExceptionHandler.java` to handle the exceptions thrown during the game play.
+   - Exception Handling: The application has custom exception classes like `NoHostException.java`, `UserNotFoundException.java`, `InvalidMoveException.java`, and `NoActiveGameException.java` to handle various scenarios during the gameplay.
+   - Exception Handlers: The application uses `ApplicationExceptionHandler.java` to handle the exceptions thrown during the gameplay.
 
 3. Contributing:
    - Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+4. API curl:
+ curl --location 'localhost:8080/create-game' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "usersEmailList" : [
+        "ujjal@gmail.com", "amit@gmail.com"
+    ]
+}'
 
 4. License:
    - The project is licensed under the MIT license.
