@@ -1,0 +1,20 @@
+Game Application Usage Guide
+
+1. Installation:
+   - Ensure you have Java and Maven installed on your system.
+   - Clone the repository to your local system.
+   - Navigate to the project directory.
+   - Run `mvn clean install` to build the project.
+   - Run `mvn spring-boot:run` to start the application.
+
+2. Features:
+   - Game Management: The application allows you to create, manage, and play games. The main entry point of the application is `GameApplication.java`.
+   - Entity Management: The application uses `BaseEntity.java` as a base class for all entities in the application. It includes fields like `id`, `createdAt`, `lockId`, and `modifiedAt`.
+   - Exception Handling: The application has custom exception classes like `NoHostException.java`, `UserNotFoundException.java`, `InvalidMoveException.java`, and `NoActiveGameException.java` to handle various scenarios during the game play.
+   - Exception Handlers: The application uses `ApplicationExceptionHandler.java` to handle the exceptions thrown during the game play.
+
+3. Contributing:
+   - Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+4. License:
+   - The project is licensed under the MIT license.

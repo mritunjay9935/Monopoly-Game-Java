@@ -1,0 +1,37 @@
+Design/Architectural Decisions:
+
+1. Exception Handling: Used AOP (Aspect Oriented Programming) design pattern for centralized exception handling with `@RestControllerAdvice` and `@ExceptionHandler` annotations.
+
+2. Spring Boot Framework: Used convention over configuration design principle provided by Spring Boot for quick project setup and configuration.
+
+3. JPA Auditing: Used Active Record design pattern for automatic population of certain fields like `createdAt` and `modifiedAt`.
+
+4. Maven for Dependency Management: Followed Dependency Inversion Principle for reducing coupling between modules.
+
+5. Spring Boot Application: Used Spring Boot Application pattern for the main entry point of the application.
+
+6. Custom Exceptions: Used Exception Propagation design pattern for handling various scenarios during the game play.
+
+7. Game Service: Created a GameService class to handle game creation and game play logic.
+
+8. Player Cash System: Added a cash system to the Player class to manage player's cash.
+
+9. Roll Dice and Land: Implemented a method in GameService to simulate dice roll and landing on a place.
+
+10. Purchase Place: Added a purchase method in the Place class to handle place purchase when a player lands on it.
+
+11. Pay Rent: Added a payRent method in the Place class to handle rent payment when a player lands on a place owned by another player.
+
+12. Extendable Player Management: Created a PlayerService class to manage players dynamically as the number of players increases.
+
+13. Scalable Game Board: Designed the game board to handle any number of players.
+
+14. Gain Cash on Crossing Start: Implemented a feature to give players a cash bonus when they cross the start.
+
+15. Declare Winner: Implemented a method to declare the winner based on bankruptcy or the player with the highest cash before turn 50.
+
+16. Database Data Persistence: Used Spring Data JPA for database data persistence to allow the game to be played uninterrupted even if the application is restarted.
+
+17. Design Patterns: Used various design patterns like Factory, Singleton, and Strategy for a highly maintainable and readable code base.
+
+18. Documentation: Used Javadoc and comments for a highly maintainable and readable code base.
